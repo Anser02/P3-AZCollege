@@ -1,0 +1,383 @@
+create database ic;
+show databases;
+use ic;
+
+create table tamildeptstu (reg_no varchar(30) not null primary key,student_name varchar(30),year_of_study varchar(30),
+userid varchar(30),password varchar(30),sem1_fees_paid varchar(30) not null,sem2_fees_paid varchar(30) not null,sem3_fees_paid varchar(30) not null,sem4_fees_paid varchar(30) not null,sem5_fees_paid varchar(30) not null,sem6_fees_paid varchar(30) not null);
+
+insert into tamildeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid,sem3_fees_paid,sem4_fees_paid) 
+values ('2021t01','thimmarayan ','3','2021t01','t01','yes','yes','yes','yes'),('2021t02','bharath','3','2021t02','t02','yes','yes','yes','yes'),
+('2021t03','janarthanan ','3','2021t03','t03','yes','yes','yes','yes'),('2021t04','ibrahim ','3','2021t04','t04','yes','yes','yes','yes'),
+('2021t05','sanjay ','3','2021t05','t05','yes','yes','yes','yes');
+select *from tamildeptstu;
+
+insert into tamildeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid) 
+values ('2022t01','md shuhaib ','2','2022t01','t01','yes','yes'),('2022t02','sameer ahmed','2','2022t02','t02','yes','yes'),
+('2022t03','anser basha ','2','2022t03','t03','yes','yes'),('2022t04','kaleem ','2','2022t04','t04','yes','yes'),
+('2022t05','sanjay kumar ','2','2022t05','t05','yes','yes');
+
+insert into tamildeptstu (reg_no,student_name,year_of_study,userid,password) values ('2023t01','arjun ','1','2023t01','t01'),('2023t02','bharath','1','2023t02','t02'),
+('2023t03','chandru ','1','2023t03','t03'),('2023t04','asrar ahmed ','1','2023t04','t04'),('2023t05','md basha ','1','2023t05','t05');
+
+create table englishdeptstu (reg_no varchar(30) not null primary key,student_name varchar(30),year_of_study varchar(30),
+userid varchar(30),password varchar(30),sem1_fees_paid varchar(30) not null,sem2_fees_paid varchar(30) not null,sem3_fees_paid varchar(30) not null,sem4_fees_paid varchar(30) not null,sem5_fees_paid varchar(30) not null,sem6_fees_paid varchar(30) not null);
+
+insert into englishdeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid,sem3_fees_paid,sem4_fees_paid) 
+values ('2021e01','thimmarayan ','3','2022e01','e01','yes','yes','yes','yes'),('2021e02','althaf ','3','2021e02','e02','yes','yes','yes','yes'),
+('2021e03','anantha raj ','3','2021e03','e03','yes','yes','yes','yes'),('2021e04','ashwin ','3','2021e04','e04','yes','yes','yes','yes'),
+('2021e05','israr ahmed ','3','2021e04','e05','yes','yes','yes','yes');
+
+insert into englishdeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid) 
+values ('2022e01','aslam basha ','2','2022e01','e01','yes','yes'),('2022e02','althaf ahmed ','2','2022e02','e02','yes','yes'),
+('2022e03','ananth ','2','2022e03','e03','yes','yes'),('2022e04','ashwin kumar ','2','2022e04','e04','yes','yes'),
+('2022e05','israr','2','2022e04','e05','yes','yes');
+
+insert into englishdeptstu (reg_no,student_name,year_of_study,userid,password) values ('2023e01','basha ','1','2023e01','e01'),('2023e02','ahmed ','1','2023e02','e02'),
+('2023e03','nandha ','1','2023e03','e03'),('2023e04','kumar ','1','2023e04','e04'),('2023e05','divagar','1','2023e04','e05');
+
+create table chedeptstu (reg_no varchar(30) not null primary key,student_name varchar(30),year_of_study varchar(30),
+userid varchar(30),password varchar(30),sem1_fees_paid varchar(30) not null,sem2_fees_paid varchar(30) not null,sem3_fees_paid varchar(30) not null,sem4_fees_paid varchar(30) not null,sem5_fees_paid varchar(30) not null,sem6_fees_paid varchar(30) not null);
+
+insert into chedeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid,sem3_fees_paid,sem4_fees_paid) 
+values ('2021c01','nixen ','3','2021c01','c01','yes','yes','yes','yes'),('2021c02','nandhagopal ','3','2021c02','c02','yes','yes','yes','yes'),
+('2021c03','yousuf ','3','2021c03','c03','yes','yes','yes','yes'),('2021c04','sajjad ','3','2021c04','c04','yes','yes','yes','yes'),
+('2021c05','pradeep ','3','2021c05','c05','yes','yes','yes','yes');
+
+insert into chedeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid) 
+values ('2022c01','pradeep ','2','2022c01','c01','yes','yes'),('2022c02','vishnu ','2','2022c02','c02','yes','yes'),
+('2022c03','vijay ','2','2022c03','c03','yes','yes'),('2022c04','sajjad ','2','2022c04','c04','yes','yes'),('2022c05','pradeep ','2','2022c05','c05','yes','yes');
+
+insert into chedeptstu (reg_no,student_name,year_of_study,userid,password) values ('2023c01','suresh ','1','2023c01','c01'),
+('2023c02','thimmarayan ','1','2023c02','c02'),('2023c03','md yousuf ','1','2023c03','c03'),('2023c04','syed omer ','1','2023c04','c04'),
+('2023c05','saravanan ','1','2023c05','c05');
+
+create table csdeptstu (reg_no varchar(30) not null primary key,student_name varchar(30),year_of_study varchar(30),
+userid varchar(30),password varchar(30),sem1_fees_paid varchar(30) not null,sem2_fees_paid varchar(30) not null,sem3_fees_paid varchar(30) not null,sem4_fees_paid varchar(30) not null,sem5_fees_paid varchar(30) not null,sem6_fees_paid varchar(30) not null);
+
+insert into csdeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid,sem3_fees_paid,sem4_fees_paid) 
+values ('2021cs01','abdul rahim ','3','2021cs01','cs01','yes','yes','yes','yes'),('2021cs02','abdul rasheed','3','2021cs02','cs02','yes','yes','yes','yes'),
+('2021cs03','abdul salaam ','3','2021cs03','cs03','yes','yes','yes','yes'),('2021cs04','mohammed ali ','3','2021cs04','cs04','yes','yes','yes','yes'),
+('2021cs05','mohammed basha ','3','2021cs05','cs05','yes','yes','yes','yes');
+
+insert into csdeptstu (reg_no,student_name,year_of_study,userid,password,sem1_fees_paid,sem2_fees_paid) 
+values ('2022cs01','abdulla ','2','2022cs01','cs01','yes','yes'),('2022cs02','rasheed','2','2022cs02','cs02','yes','yes'),
+('2022cs03','md huzaifa ','2','2022cs03','cs03','yes','yes'),('2022cs04','noor basha ','2','2022cs04','cs04','yes','yes'),
+('2022cs05','chand basha ','2','2022cs05','cs05','yes','yes');
+
+insert into csdeptstu (reg_no,student_name,year_of_study,userid,password) values ('2023cs01',' zaknan ','1','2023cs01','cs01'),('2023cs02','shazib','1','2023cs02','cs02'),
+('2023cs03','saihan ','1','2023cs03','cs03'),('2023cs04','md sameed','1','2023cs04','cs04'),('2023cs05','mohammed zameer','1','2023cs05','cs05');
+
+create table admission_login (userid varchar(30),password varchar(30));
+insert into admission_login values ('admission01','anser101');
+
+create table fees_login (userid varchar(30),password varchar(30));
+insert into fees_login values ('fees01','anser101');
+
+create table coe_login (userid varchar(30),password varchar(30));
+insert into coe_login values ('coe01','anser101');
+
+create table admission (admission_no varchar (30),Student_Name varchar(30), dept varchar (30),D_O_B varchar(30),Address varchar(30),
+Mobile_No varchar(30),Email_Id varchar(30),Blood_Group varchar(30),Father_Name varchar(30),Father_Mobile_No varchar(30));
+
+insert into admission values('a01','Asrar Ahmed','13-09-2003','cs','11, Jalal Road 2nd street, Ambur.','9876543210','asrar234@gmail.com','b+ve','Basheer Ahmed ','9566789655'),
+('a02','Anser Basha','19-10-2003','cs',' No22, HighWay Road, Pernambut','887963210','anser7854234@gmail.com','a+ve','shuhaib ','7766789600'),
+('a03','Abdul Rasheed','27-09-2003','cs','111/2B GH Road 2nd street, Ambur.','9876543210','abdulrasheed0012@gmail.com','b+ve','Abdulla','8526789655');
+
+create table tfees (dept varchar(30),year_of_study varchar(30),sem varchar(30),sem_fees int,sem_exam_fees int,
+ Total_Amount int generated always as ((sem_fees) + (sem_exam_fees)));
+ insert into tfees (dept,year_of_study,sem,sem_fees,sem_exam_fees) values ('tamil','1st year','1',2500,700),('tamil','1st year','2',2700,750),
+ ('tamil','2nd year','3',2850,795),('tamil','2nd year','4',3000,800),('tamil','3rd year','5',3200,850),('tamil','3rd year','6',3500,950);
+
+create table efees (dept varchar(30),year_of_study varchar(30),sem varchar(30),sem_fees int,sem_exam_fees int,
+ Total_Amount int generated always as ((sem_fees) + (sem_exam_fees)));
+ insert into efees (dept,year_of_study,sem,sem_fees,sem_exam_fees) values ('english','1st year','1',4500,800),('english','1st year','2',4800,800),
+ ('english','2nd year','3',4900,850),('english','2nd year','4',5000,900),('english','3rd year','5',5200,900),('english','3rd year','6',5500,950);
+
+ 
+ create table chefees (dept varchar(30),year_of_study varchar(30),sem varchar(30),sem_fees int,lab_fees int,sem_exam_fees int,
+ Total_Amount int generated always as ((sem_fees) + (lab_fees) + (sem_exam_fees)));
+ insert into chefees (dept,year_of_study,sem,sem_fees,lab_fees,sem_exam_fees) values ('Chemistry','1st Year','1',6000,1200,850),
+ ('Chemistry','1st Year','2',6200,1200,950),('Chemistry','2nd Year','3',6500,1300,1050),('Chemistry','2nd Year','4',6700,1400,1050),
+ ('Chemistry','3rd Year','5',6900,1500,1250),('Chemistry','3rd Year','6',7200,1500,1250);
+
+create table csfees (dept varchar(30),year_of_study varchar(30),sem varchar(30),sem_fees int,lab_fees int,sem_exam_fees int,
+ Total_Amount int generated always as ((sem_fees) + (lab_fees) + (sem_exam_fees)));
+insert into csfees (dept,year_of_study,sem,sem_fees,lab_fees,sem_exam_fees) values ('Comp Sci','1sd Year','1',5500,1000,750),
+('Comp Sci','1sd Year','2',5800,1100,800),('Comp Sci','2nd Year','3',6200,1200,950),('Comp Sci','2nd Year','4',6500,1300,950),
+('Comp Sci','3rd Year','5',6700,1400,1050),('Comp Sci','3rd Year','6',7000,1500,1250);
+
+
+create table dept (dept varchar(30) not null,userid varchar(30) not null,passwod varchar(30) not null);
+insert into dept values ('tamil','t100','tamil100'),('english','e100','english100'),('chemistry','c100','chemistry100'),('cs','cs100','comp100');
+
+create table office_login (userid varchar(30),password varchar (30));
+insert into office_login values ('office01','anser01'),('office02','basha02'),('office03','chand03');
+
+create table cs2021s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into cs2021s1im values('2021cs01',21,22,23,24,22,20),('2021cs02',21,22,23,24,22,20),('2021cs03',21,22,23,24,22,20),('2021cs04',21,22,23,24,22,20),('2021cs05',21,22,23,24,22,20);
+
+create table cs2021s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into cs2021s2im values('2021cs01',21,22,23,24,22,20),('2021cs02',21,22,23,24,22,20),('2021cs03',21,22,23,24,22,20),('2021cs04',21,22,23,24,22,20),('2021cs05',21,22,23,24,22,20);
+
+create table cs2021s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into cs2021s3im values('2021cs01',21,22,23,24,22,20),('2021cs02',21,22,23,24,22,20),('2021cs03',21,22,23,24,22,20),('2021cs04',21,22,23,24,22,20),('2021cs05',21,22,23,24,22,20);
+
+create table cs2021s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into cs2021s4im values('2021cs01',21,22,23,24,22,20),('2021cs02',21,22,23,24,22,20),('2021cs03',21,22,23,24,22,20),('2021cs04',21,22,23,24,22,20),('2021cs05',21,22,23,24,22,20);
+
+create table cs2021s5im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table cs2021s6im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table cs2022s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into cs2022s1im values('2022cs01',21,22,23,24,22,20),('2022cs02',21,22,23,24,22,20),('2022cs03',21,22,23,24,22,20),('2022cs04',21,22,23,24,22,20),('2022cs05',21,22,23,24,22,20);
+
+create table cs2022s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into cs2021s2im values('2022cs01',21,22,23,24,22,20),('2022cs02',21,22,23,24,22,20),('2022cs03',21,22,23,24,22,20),('2022cs04',21,22,23,24,22,20),('2022cs05',21,22,23,24,22,20);
+
+create table cs2022s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table cs2022s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table cs2023s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table cs2023s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table cs2021s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into cs2021s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021cs01',56,45,65,45,35,65),('2021cs02',26,45,65,45,35,65),('2021cs03',56,45,65,42,29,65),('2021cs04',46,45,65,45,55,65),('2021cs05',56,45,65,45,35,65);
+
+create table cs2021s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into cs2021s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021cs01',16,45,65,45,35,65),('2021cs02',56,45,65,45,35,65),('2021cs03',56,45,65,42,29,65),('2021cs04',46,45,65,45,55,65),('2021cs05',56,45,25,45,35,65);
+
+create table cs2021s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into cs2021s3em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021cs01',46,45,65,45,35,65),('2021cs02',46,25,65,45,35,55),('2021cs03',56,45,65,42,49,65),('2021cs04',46,45,65,45,55,65),('2021cs05',56,45,15,45,35,65);
+
+create table cs2021s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into cs2021s4em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021cs01',46,45,65,45,35,65),('2021cs02',56,45,65,45,35,65),('2021cs03',56,45,65,42,49,65),('2021cs04',46,45,65,45,55,65),('2021cs05',56,45,28,45,35,65);
+
+create table cs2021s5em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table cs2021s6em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+
+create table cs2022s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into cs2022s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022cs01',36,65,53,45,35,65),('2022cs02',56,45,65,45,09,65),('2022cs03',56,45,45,42,29,65),('2022cs04',46,45,65,45,55,65),('2022cs05',56,45,47,45,35,65);
+
+create table cs2022s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into cs2022s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022cs01',46,45,65,45,35,65),('2022cs02',56,45,65,45,35,65),('2022cs03',36,45,65,42,29,65),('2022cs04',66,45,65,45,55,65),('2022cs05',56,45,25,45,35,65);
+
+create table cs2022s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table cs2022s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table cs2023s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table cs2023s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+
+create table t2021s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into t2021s1im values('2021t01',21,22,23,24,22,20),('2021t02',21,22,23,24,22,20),('2021t03',21,22,23,24,22,20),('2021t04',21,22,23,24,22,20),('2021t05',21,22,23,24,22,20);
+
+create table t2021s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into t2021s2im values('2021t01',21,22,23,24,22,20),('2021t02',21,22,23,24,22,20),('2021t03',21,22,23,24,22,20),('2021t04',21,22,23,24,22,20),('2021t05',21,22,23,24,22,20);
+
+create table t2021s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into t2021s3im values('2021t01',21,22,23,24,22,20),('2021t02',21,22,23,24,22,20),('2021t03',21,22,23,24,22,20),('2021t04',21,22,23,24,22,20),('2021t05',21,22,23,24,22,20);
+
+create table t2021s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into t2021s4im values('2021t01',21,22,23,24,22,20),('2021t02',21,22,23,24,22,20),('2021t03',21,22,23,24,22,20),('2021t04',21,22,23,24,22,20),('2021t05',21,22,23,24,22,20);
+
+create table t2021s5im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table t2021s6im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table t2022s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into t2022s1im values('2022t01',21,22,23,24,22,20),('2022t02',21,22,23,24,22,20),('2022t03',21,22,23,24,22,20),('2022t04',21,22,23,24,22,20),('2022t05',21,22,23,24,22,20);
+
+create table t2022s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into t2021s2im values('2022t01',21,22,23,24,22,20),('2022t02',21,22,23,24,22,20),('2022t03',21,22,23,24,22,20),('2022t04',21,22,23,24,22,20),('2022t05',21,22,23,24,22,20);
+
+create table t2022s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table t2022s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table t2023s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table t2023s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table t2021s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into t2021s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021t01',56,45,65,45,35,65),('2021t02',26,45,65,45,35,65),('2021t03',56,45,65,42,29,65),('2021t04',46,45,65,45,55,65),('2021t05',56,45,65,45,35,65);
+
+create table t2021s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into t2021s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021t01',16,45,65,45,35,65),('2021t02',56,45,65,45,35,65),('2021t03',56,45,65,42,29,65),('2021t04',46,45,65,45,55,65),('2021t05',56,45,25,45,35,65);
+
+create table t2021s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into t2021s3em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021t01',46,45,65,45,35,65),('2021t02',46,25,65,45,35,55),('2021t03',56,45,65,42,49,65),('2021t04',46,45,65,45,55,65),('2021t05',56,45,15,45,35,65);
+
+create table t2021s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into t2021s4em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021t01',46,45,65,45,35,65),('2021t02',56,45,65,45,35,65),('2021t03',56,45,65,42,49,65),('2021t04',46,45,65,45,55,65),('2021t05',56,45,28,45,35,65);
+
+create table t2021s5em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table t2021s6em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table t2022s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into t2022s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022t01',36,65,53,45,35,65),('2022t02',56,45,65,45,09,65),('2022t03',56,45,45,42,29,65),('2022t04',46,45,65,45,55,65),('2022t05',56,45,47,45,35,65);
+
+create table t2022s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into t2022s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022t01',36,65,53,45,35,65),('2022t02',56,45,65,45,09,65),('2022t03',56,45,45,42,29,65),('2022t04',46,45,65,45,55,65),('2022t05',56,45,47,45,35,65);
+
+create table t2022s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table t2022s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table t2023s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table t2023s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+
+create table e2021s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into e2021s1im values('2021e01',21,22,23,24,22,20),('2021e02',21,22,23,24,22,20),('2021e03',21,22,23,24,22,20),('2021e04',21,22,23,24,22,20),('2021e05',21,22,23,24,22,20);
+create table e2021s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into e2021s2im values('2021e01',21,22,23,24,22,20),('2021e02',21,22,23,24,22,20),('2021e03',21,22,23,24,22,20),('2021e04',21,22,23,24,22,20),('2021e05',21,22,23,24,22,20);
+create table e2021s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into e2021s3im values('2021e01',21,22,23,24,22,20),('2021e02',21,22,23,24,22,20),('2021e03',21,22,23,24,22,20),('2021e04',21,22,23,24,22,20),('2021e05',21,22,23,24,22,20);
+create table e2021s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into e2021s4im values('2021e01',21,22,23,24,22,20),('2021e02',21,22,23,24,22,20),('2021e03',21,22,23,24,22,20),('2021e04',21,22,23,24,22,20),('2021e05',21,22,23,24,22,20);
+create table e2021s5im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+create table e2021s6im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table e2022s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into e2022s1im values('2022e01',21,22,23,24,22,20),('2022e02',21,22,23,24,22,20),('2022e03',21,22,23,24,22,20),('2022e04',21,22,23,24,22,20),('2022e05',21,22,23,24,22,20);
+
+create table e2022s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into e2022s2im values('2022e01',21,22,23,24,22,20),('2022e02',21,22,23,24,22,20),('2022e03',21,22,23,24,22,20),('2022e04',21,22,23,24,22,20),('2022e05',21,22,23,24,22,20);
+
+create table e2022s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table e2022s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table e2023s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table e2023s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table e2021s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into e2021s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021e01',56,45,65,45,35,65),('2021e02',26,45,65,45,35,65),('2021e03',56,45,65,42,29,65),('2021e04',46,45,65,45,55,65),('2021e05',56,45,65,45,35,65);
+create table e2021s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into e2021s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021e01',16,45,65,45,35,65),('2021e02',56,45,65,45,35,65),('2021e03',56,45,65,42,29,65),('2021e04',46,45,65,45,55,65),('2021e05',56,45,25,45,35,65);
+create table e2021s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into e2021s3em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021e01',46,45,65,45,35,65),('2021e02',46,25,65,45,35,55),('2021e03',56,45,65,42,49,65),('2021e04',46,45,65,45,55,65),('2021e05',56,45,15,45,35,65);
+create table e2021s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into e2021s4em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021e01',46,45,65,45,35,65),('2021e02',56,45,65,45,35,65),('2021e03',56,45,65,42,49,65),('2021e04',46,45,65,45,55,65),('2021e05',56,45,28,45,35,65);
+select *from e2021s4em;
+create table e2021s5em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+create table e2021s6em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table e2022s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into e2022s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022e01',36,65,53,45,35,65),('2022e02',56,45,65,45,09,65),('2022e03',56,45,45,42,29,65),('2022e04',46,45,65,45,55,65),('2022e05',56,45,47,45,35,65);
+create table e2022s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into e2022s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022e01',36,65,53,45,35,65),('2022e02',56,45,65,45,09,65),('2022e03',56,45,45,42,29,65),('2022e04',46,45,65,45,55,65),('2022e05',56,45,47,45,35,65);
+create table e2022s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+create table e2022s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+
+create table e2023s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+create table e2023s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table c2021s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into c2021s1im values('2021c01',21,22,23,24,22,20),('2021c02',21,22,23,24,22,20),('2021c03',21,22,23,24,22,20),('2021c04',21,22,23,24,22,20),('2021c05',21,22,23,24,22,20);
+create table c2021s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into c2021s2im values('2021c01',21,22,23,24,22,20),('2021c02',21,22,23,24,22,20),('2021c03',21,22,23,24,22,20),('2021c04',21,22,23,24,22,20),('2021c05',21,22,23,24,22,20);
+create table c2021s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into c2021s3im values('2021c01',21,22,23,24,22,20),('2021c02',21,22,23,24,22,20),('2021c03',21,22,23,24,22,20),('2021c04',21,22,23,24,22,20),('2021c05',21,22,23,24,22,20);
+create table c2021s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into c2021s4im values('2021c01',21,22,23,24,22,20),('2021c02',21,22,23,24,22,20),('2021c03',21,22,23,24,22,20),('2021c04',21,22,23,24,22,20),('2021c05',21,22,23,24,22,20);
+create table c2021s5im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+create table c2021s6im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table c2022s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into c2022s1im values('2022c01',21,22,23,24,22,20),('2022c02',21,22,23,24,22,20),('2022c03',21,22,23,24,22,20),('2022c04',21,22,23,24,22,20),('2022c05',21,22,23,24,22,20);
+create table c2022s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+insert into c2022s2im values('2022c01',21,22,23,24,22,20),('2022c02',21,22,23,24,22,20),('2022c03',21,22,23,24,22,20),('2022c04',21,22,23,24,22,20),('2022c05',21,22,23,24,22,20);
+create table c2022s3im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+create table c2022s4im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+create table c2023s1im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+create table c2023s2im (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int);
+
+
+create table c2021s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into c2021s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021c01',56,45,65,45,35,65),('2021c02',26,45,65,45,35,65),('2021c03',56,45,65,42,29,65),('2021c04',46,45,65,45,55,65),('2021c05',56,45,65,45,35,65);
+create table c2021s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into c2021s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021c01',16,45,65,45,35,65),('2021c02',56,45,65,45,35,65),('2021c03',56,45,65,42,29,65),('2021c04',46,45,65,45,55,65),('2021c05',56,45,25,45,35,65);
+create table c2021s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into c2021s3em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021c01',46,45,65,45,35,65),('2021c02',46,25,65,45,35,55),('2021c03',56,45,65,42,49,65),('2021c04',46,45,65,45,55,65),('2021c05',56,45,15,45,35,65);
+
+create table c2021s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into c2021s4em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2021c01',46,45,65,45,35,65),('2021c02',56,45,65,45,35,65),('2021c03',56,45,65,42,49,65),('2021c04',46,45,65,45,55,65),('2021c05',56,45,28,45,35,65);
+
+create table c2021s5em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table c2021s6em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table c2022s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into c2022s1em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022c01',36,65,53,45,35,65),('2022c02',56,45,65,45,09,65),('2022c03',56,45,45,42,29,65),('2022c04',46,45,65,45,55,65),('2022c05',56,45,47,45,35,65);
+
+create table c2022s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+insert into c2022s2em (regno,sub1,sub2,sub3,sub4,sub5,sub6)values ('2022c01',36,65,53,45,35,65),('2022c02',56,45,65,45,09,65),('2022c03',56,45,45,42,29,65),('2022c04',46,45,65,45,55,65),('2022c05',56,45,47,45,35,65);
+
+create table c2022s3em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table c2022s4em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table c2023s1em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
+
+create table c2023s2em (regno varchar(30)not null primary key,sub1 int,sub2 int,sub3 int,sub4 int, sub5 int,sub6 int,total int generated always as ((sub1) + (sub2) + (sub3) + (sub4) + (sub5) + (sub6)),
+result varchar(30) generated always as (if(sub1>29&&sub2>29&&sub3>29&&sub4>29&&sub5>29&&sub6>29,'Pass','RA')));
